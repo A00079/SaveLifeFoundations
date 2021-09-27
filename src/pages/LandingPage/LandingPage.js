@@ -1,7 +1,7 @@
 import React from "react";
 import HomeBanner from '../../assets/images/homebanner.jpg';
 import { Text } from '../../components';
-import { LandingBanner, OurActivity, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts } from '../LandingPage/components';
+import { LandingBanner, OurActivity, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 
 const LandingPage = () => {
   return (
@@ -62,6 +62,12 @@ const LandingPage = () => {
         </section>
         <section>
           <SomeFacts />
+        </section>
+        <section>
+          <Volunteers />
+        </section>
+        <section>
+          <LatestNews />
         </section>
       </div>
     </React.Fragment>

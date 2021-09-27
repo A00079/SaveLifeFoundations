@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
@@ -7,8 +7,10 @@ import india from '../../../../assets/images/india.png';
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Our Activity', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Story About', href: '#', current: false },
+  { name: 'Get To Know Us', href: '#', current: false },
+  { name: 'Activities', href: '#', current: false },
+  { name: 'Voluntrees', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -16,8 +18,36 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
+  const prevScrollY = useRef(0);
+  const [goingUp, setGoingUp] = useState(false);
+  const [changeNavColor, setChangeNavColor] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (prevScrollY.current < currentScrollY && goingUp) {
+        setGoingUp(false);
+      }
+      if (prevScrollY.current > currentScrollY && !goingUp) {
+        setGoingUp(true);
+      }
+      prevScrollY.current = currentScrollY;
+      if (currentScrollY > 640) {
+        setChangeNavColor(true);
+      }else{
+        setChangeNavColor(false);
+      }
+      console.log(goingUp, currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingUp]);
+
   return (
-    <Disclosure as="nav" className="bg-transparent fixed w-full">
+    <Disclosure as="nav" className={changeNavColor ? 'bg-gray-900 fixed w-full' : 'bg-transparent fixed w-full'} style={{ zIndex: '9999' }}>
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -47,7 +77,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden sm:block sm:ml-6 sm:pl-10">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-3">
                     {navigation.map((item) => (
                       <a
                         key={item.name}

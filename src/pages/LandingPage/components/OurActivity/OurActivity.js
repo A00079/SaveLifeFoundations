@@ -1,10 +1,11 @@
 import React from "react";
 import { Text } from '../../../../components';
+
 const OurActivity = () => {
     return (
         <React.Fragment>
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
+                <div className="container px-5 mx-auto">
                     <div className="text-center mb-20">
                         <Text
                             text={'Our Activity'}
