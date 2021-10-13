@@ -1,102 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text } from '../../../../components';
 
 const StoryAboutWeDo = () => {
+
+    const [ourValuesData, setOurValuesData] = useState([
+        {
+            'title': "Accountability",
+            'content': "In every action we take, we commit to maintaining the highest ethical standards and taking full responsibility for our actions, while advocating for public institutions to adhere to the same standards as we do."
+        },
+        {
+            'title': "Collaborative action and solidarity",
+            'content': "When appropriate by our mission, we seek joint action and cooperation with other NGOs and CSOs, and stand with them when faced with challenges."
+        },
+        {
+            'title': "Unity in diversity",
+            'content': "Although we celebrate diversity and are committed to achieving unity among NGOs, we will also work with other like-minded organizations."
+        }, {
+            'title': "Work with Government hand in hand",
+            'content': "Save Life Foundation main purpose is to facilitate peace between Governments and nongovernmental organizations. The SAVE LIFE FOUNDATION continually opens the doors of Government for partnership and constructive criticism in order to live up to its genesis."
+        }, {
+            'title': "Gender and diversity",
+            'content': "We understand the importance of reflecting on and promoting respect for gender and diversity issues in our work"
+        }, {
+            'title': "Autonomy",
+            'content': "To ensure the independence and existence of NGOs, we must always strive for and safeguard those rights."
+        }, {
+            'title': "Social Justice and Equity",
+            'content': "Through collaborative work, we will pursue justice, equality, and dignity, particularly for the poor and marginalized in medical, educational and child care sector."
+        }
+    ]);
+    const [showMore, setShowMore] = useState(3);
+
+    const handleShowMore = () => {
+        if (showMore == 3) {
+            setShowMore(7);
+        }
+        if (showMore == 7) {
+            setShowMore(3);
+        }
+    }
     return (
         <React.Fragment>
-            <section class="bg-gray-100 pt-16 body-font">
-                <div class="container mx-auto flex px-5 pb-16 md:flex-row flex-col items-start">
-                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 mx-auto">
+                    <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
                         <Text
-                            text={'Story About'}
-                            className='title-font sm:text-4xl text-3xl font-bold text-gray-900'
+                            text={'Our Values'}
+                            className='sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900'
                         />
                         <Text
-                            text={'What We Do'}
-                            className='title-font sm:text-4xl text-3xl mb-4 font-bold text-yellow-500'
+                            text={'The following are the core values that will guide the operations of Save Life Foundation:'}
+                            className='lg:w-1/2 w-full leading-relaxed text-gray-500'
                         />
-                        <Text
-                            text={'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.'}
-                            className='mb-8 leading-relaxed text-gray-400'
-                        />
-                        <div class="flex justify-center">
-                            <button class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-400 rounded text-lg">Know More</button>
-                        </div>
                     </div>
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full space-y-5 sm:space-y-3">
-                        <div className='flex flex-row justify-between items-start space-x-2'>
-                            <div class="sm:px-4 rounded-lg w-full space-y-2">
-                                <div className='bg-gray-200 rounded-full p-2 w-12 sm:w-16 mx-auto sm:mx-0'>
-                                    <svg  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className='text-yellow-400 w-8 sm:w-12 p-1 sm:p-3 flex items-center justify-center' viewBox="0 0 24 24">
-                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                                    </svg>
-                                </div>
-                                <Text
-                                    text={'Leave Eligation'}
-                                    className='title-font font-medium mb-1 text-md text-gray-900 text-center sm:text-left'
-                                />
-                                <Text
-                                    text={'Synth chartreuse iPhone lomo cray raw denim brunch everyday.'}
-                                    className='leading-relaxed text-xs text-gray-500 text-center sm:text-left'
-                                />
-                            </div>
-
-                            <div class="sm:px-4 rounded-lg w-full space-y-2">
-                                <div className='bg-gray-200 rounded-full p-2 w-12 sm:w-16 mx-auto sm:mx-0'>
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className='text-yellow-400 w-8 sm:w-12 p-1 sm:p-3 flex items-center justify-center' viewBox="0 0 24 24">
-                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                                    </svg>
-                                </div>
-                                <Text
-                                    text={'Leave Eligation'}
-                                    className='title-font font-medium mb-1 text-md text-gray-900 text-center sm:text-left'
-                                />
-                                <Text
-                                    text={'Synth chartreuse iPhone lomo cray raw denim brunch everyday.'}
-                                    className='leading-relaxed text-xs text-gray-500 text-center sm:text-left'
-                                />
-                            </div>
-                        </div>
-                        <div className='flex flex-row justify-between items-start space-x-2'>
-                            <div class="sm:px-4 rounded-lg w-full space-y-2">
-                                <div className='bg-gray-200 rounded-full p-2 w-12 sm:w-16 mx-auto sm:mx-0'>
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className='text-yellow-400 w-8 sm:w-12 p-1 sm:p-3 flex items-center justify-center' viewBox="0 0 24 24">
-                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                                    </svg>
-                                </div>
-                                <Text
-                                    text={'Leave Eligation'}
-                                    className='title-font font-medium mb-1 text-md text-gray-900 text-center sm:text-left'
-                                />
-                                <Text
-                                    text={'Synth chartreuse iPhone lomo cray raw denim brunch everyday.'}
-                                    className='leading-relaxed text-xs text-gray-500 text-center sm:text-left'
-                                />
-                            </div>
-                            <div class="sm:px-4 rounded-lg w-full space-y-2">
-                                <div className='bg-gray-200 rounded-full p-2 w-12 sm:w-16 mx-auto sm:mx-0'>
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className='text-yellow-400 w-8 sm:w-12 p-1 sm:p-3 flex items-center justify-center' viewBox="0 0 24 24">
-                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                                    </svg>
-                                </div>
-                                <Text
-                                    text={'Leave Eligation'}
-                                    className='title-font font-medium mb-1 text-md text-gray-900 text-center sm:text-left'
-                                />
-                                <Text
-                                    text={'Synth chartreuse iPhone lomo cray raw denim brunch everyday.'}
-                                    className='leading-relaxed text-xs text-gray-500 text-center sm:text-left'
-                                />
-                            </div>
-                        </div>
+                    <div class="flex flex-wrap -m-4">
+                        {
+                            ourValuesData.map((el, index) => {
+                                if (index < showMore) {
+                                    return (
+                                        <div class="xl:w-1/3 md:w-1/2 p-4">
+                                            <div class="border border-gray-200 p-6 rounded-lg h-72 shadow-xl">
+                                                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                                </div>
+                                                <Text
+                                                    text={el.title}
+                                                    className='text-lg text-yellow-400 font-medium title-font mb-2'
+                                                />
+                                                <Text
+                                                    text={el.content}
+                                                    className='leading-relaxed  text-sm'
+                                                />
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                            })
+                        }
+                    </div>
+                    <div className='flex flex-row justify-end py-5'>
+                        <button onClick={() => { handleShowMore() }} className="py-1 px-2 bg-yellow-400 text-white rounded-md text-xs">
+                            {
+                                showMore == 3 ? 'Show More' : 'Show Less'
+                            }
+                        </button>
                     </div>
                 </div>
             </section>

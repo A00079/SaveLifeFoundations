@@ -1,7 +1,7 @@
 import React from "react";
 import HomeBanner from '../../assets/images/homebanner.jpg';
 import { Text } from '../../components';
-import { LandingBanner, OurActivity, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
+import { LandingBanner, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 
 const LandingPage = () => {
   return (
@@ -36,7 +36,7 @@ const LandingPage = () => {
                   text={'A Change May Help Many Lives.'}
                   className='text-white text-lg sm:text-xl mt-2 font-semibold md:text-sm sm:w-96'
                 />
-                <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>Your ultimate travel companion. Carries all the information you need while travelling</h1>
+                <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
                 <div className="flex justify-center sm:justify-start mt-6">
                   <button className="inline-flex text-white font-medium bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">Donate Now</button>
                   <button className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</button>
@@ -47,14 +47,23 @@ const LandingPage = () => {
           <section>
             <LandingBanner />
           </section>
+          <section>
+            <MissionVissionGoal />
+          </section>
         </section>
         <section>
+          <AboutUs />
+        </section>
+        {/* <section>
           <OurActivity />
+        </section> */}
+        <section>
+          <WhoWeAre />
         </section>
         <section>
           <StoryAboutWeDo />
         </section>
-        <section>
+        {/* <section>
           <GetToKnowUs />
         </section>
         <section>
@@ -68,7 +77,7 @@ const LandingPage = () => {
         </section>
         <section>
           <LatestNews />
-        </section>
+        </section> */}
       </div>
     </React.Fragment>
   );

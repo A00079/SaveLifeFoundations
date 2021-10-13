@@ -6,6 +6,12 @@ export { default as ActivityInFrame } from "./ActivityInFrame";
 export { default as SomeFacts } from "./SomeFacts";
 export { default as Volunteers } from "./Volunteers";
 export { default as LatestNews } from "./LatestNews";
+export { default as MissionVissionGoal } from "./MissionVissionGoal";
+export { default as AboutUs } from "./AboutUs";
+export { default as WhoWeAre } from "./WhoWeAre";
+
+
+
 
 
 

@@ -6,11 +6,11 @@ import india from '../../../../assets/images/india.png';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'Our Activity', href: '#', current: false },
-  { name: 'Story About', href: '#', current: false },
-  { name: 'Get To Know Us', href: '#', current: false },
-  { name: 'Activities', href: '#', current: false },
-  { name: 'Voluntrees', href: '#', current: false },
+  { name: 'Mission and Vission', href: '#', current: false },
+  { name: 'About Us', href: '#', current: false },
+  { name: 'Who We Are', href: '#', current: false },
+  { name: 'What We Do', href: '#', current: false },
+  { name: 'Our Values', href: '#', current: false },
 ]
 
 function classNames(...classes) {

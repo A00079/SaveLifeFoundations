@@ -1,14 +1,18 @@
 import React from "react";
-
+import { Text } from '../../../../components';
 const LandingBanner = () => {
     return (
         <React.Fragment>
             <div className="mx-auto">
                 <div className="bg-green-400 text-white p-8 py-4 flex flex-col md:flex-row space-between items-center justify-between relative overflow-hidden">
                     <div className="flex flex-col lg:ml-14 xl:ml-28 max-w-sm lg:max-w-xl z-10">
-                        <h4 className="text-xl sm:text-3xl text-center md:text-left font-bold text-white md:pb-2">
-                            We Our Helping People From Last 20 Years.
+                        <h4 className="text-xl sm:text-2xl text-center md:text-left font-bold text-white md:pb-2">
+                            Save Life Foundation.
                         </h4>
+                        <Text
+                            text={'The underlying truth in the immortal words of Henry Wads Worth Longfellow. It serves as the basic idea behind the formation of the NGO- SAVE LIFE FOUNDATION.  Founded in the year 2021 by a crusader for social help, Mr. Aslam Shaikh, the NGO started working with the exclusive aim to start and facilitate deliverance of medical, educational and child care facilities to each and every needy person. SAVE LIFE FOUNDATION has the firm commitment to help in the complete fulfilment of constitutional obligations'}
+                            className='text-center md:text-left text-white text-sm font-semibold md:text-sm'
+                        />
                     </div>
                     <div className="pt-8 md:pt-0 justify-center lg:ml-auto z-10">
                         <a href="#" target="_blank" download
