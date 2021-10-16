@@ -10,7 +10,7 @@ const LandingBanner = () => {
                             Save Life Foundation.
                         </h4>
                         <Text
-                            text={'The underlying truth in the immortal words of Henry Wads Worth Longfellow. It serves as the basic idea behind the formation of the NGO- SAVE LIFE FOUNDATION.  Founded in the year 2021 by a crusader for social help, Mr. Aslam Shaikh, the NGO started working with the exclusive aim to start and facilitate deliverance of medical, educational and child care facilities to each and every needy person. SAVE LIFE FOUNDATION has the firm commitment to help in the complete fulfilment of constitutional obligations'}
+                            text={'The underlying truth in the immortal words of Henry Wads Worth Longfellow. It serves as the basic idea behind the formation of the NGO- SAVE LIFE FOUNDATION.  Founded in the year 2018 by a crusader for social help, Mr. Aslam Shaikh, the NGO started working with the exclusive aim to start and facilitate deliverance of medical, educational and child care facilities to each and every needy person. SAVE LIFE FOUNDATION has the firm commitment to help in the complete fulfilment of constitutional obligations'}
                             className='text-center md:text-left text-white text-sm font-semibold md:text-sm'
                         />
                     </div>

@@ -28,7 +28,7 @@ export default function Aboutus(props) {
                             </div>
                             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                                 <Text
-                                    text={'Registered under the Government of National Capital territory Delhi (India)'}
+                                    text={'Registered under the Government of Maharastra'}
                                     className='title-font sm:text-2xl text-2xl mb-6 font-medium text-white'
                                 />
                                 <Text

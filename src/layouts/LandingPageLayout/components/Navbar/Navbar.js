@@ -1,16 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import india from '../../../../assets/images/india.png';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Mission and Vission', href: '#', current: false },
-  { name: 'About Us', href: '#', current: false },
-  { name: 'Who We Are', href: '#', current: false },
-  { name: 'What We Do', href: '#', current: false },
-  { name: 'Our Values', href: '#', current: false },
+  { name: 'Home', href: '#', current: true,secLink: 'section0' },
+  { name: 'Mission and Vission', href: '#', current: false,secLink: 'section1' },
+  { name: 'About Us', href: '#', current: false,secLink: 'section2' },
+  { name: 'Who We Are', href: '#', current: false,secLink: 'section3' },
+  { name: 'Our Values', href: '#', current: false,secLink: 'section4' },
+  { name: 'Work With Us', href: '#', current: false,secLink: 'section5' },
 ]
 
 function classNames(...classes) {
@@ -35,7 +35,7 @@ export default function Navbar() {
       prevScrollY.current = currentScrollY;
       if (currentScrollY > 640) {
         setChangeNavColor(true);
-      }else{
+      } else {
         setChangeNavColor(false);
       }
       console.log(goingUp, currentScrollY);
@@ -66,31 +66,38 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    className="block lg:hidden w-14"
+                    src="/static/images/Logo.png"
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    className="hidden lg:block w-14"
+                    src="/static/images/Logo.png"
                     alt="Workflow"
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6 sm:pl-10">
+                <div className="hidden sm:block sm:ml-6 sm:pl-10 mt-4">
                   <div className="flex space-x-3">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        style={{ fontFamily: 'Raleway' }}
-                        className={classNames(
-                          item.current ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-xs font-medium uppercase'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                      <Link
+                        to={item.secLink}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={900}
                       >
-                        {item.name}
-                      </a>
+                        <p
+                          key={item.name}
+                          style={{ fontFamily: 'Raleway' }}
+                          className={classNames(
+                            item.current ? 'cursor-pointer bg-gray-700 text-white' : 'cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
+                            'cursor-pointer px-3 py-2 rounded-md text-xs font-medium uppercase'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </p>
+                      </Link>
                     ))}
                   </div>
                 </div>

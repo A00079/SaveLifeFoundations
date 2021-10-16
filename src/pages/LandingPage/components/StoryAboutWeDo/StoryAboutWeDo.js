@@ -59,7 +59,7 @@ const StoryAboutWeDo = () => {
                                 if (index < showMore) {
                                     return (
                                         <div class="xl:w-1/3 md:w-1/2 p-4">
-                                            <div class="border border-gray-200 p-6 rounded-lg h-72 shadow-xl">
+                                            <div class="border border-gray-200 p-6 rounded-lg shadow-xl">
                                                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
                                                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
                                                 </div>
