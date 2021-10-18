@@ -3,25 +3,33 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import india from '../../../../assets/images/india.png';
 import { Link, animateScroll as scroll } from "react-scroll";
+import logo from '../../../../assets/images/logo.png';
+import { withRouter } from "react-router";
 
 const navigation = [
-  { name: 'Home', href: '#', current: true,secLink: 'section0' },
-  { name: 'Mission and Vission', href: '#', current: false,secLink: 'section1' },
-  { name: 'About Us', href: '#', current: false,secLink: 'section2' },
-  { name: 'Who We Are', href: '#', current: false,secLink: 'section3' },
-  { name: 'Our Values', href: '#', current: false,secLink: 'section4' },
-  { name: 'Work With Us', href: '#', current: false,secLink: 'section5' },
+  { name: 'Home', href: '#', current: true, secLink: 'section0' },
+  { name: 'Mission and Vission', href: '#', current: false, secLink: 'section1' },
+  { name: 'About Us', href: '#', current: false, secLink: 'section2' },
+  { name: 'Who We Are', href: '#', current: false, secLink: 'section3' },
+  { name: 'Our Values', href: '#', current: false, secLink: 'section4' },
+  { name: 'Work With Us', href: '#', current: false, secLink: 'section5' },
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+const Navbar = (props) => {
 
   const prevScrollY = useRef(0);
   const [goingUp, setGoingUp] = useState(false);
   const [changeNavColor, setChangeNavColor] = useState(false);
+
+  const handleRouteChange = () => {
+    console.log('Cases', props);
+    props.history.push('/cases');
+    // window.location = '/cases';
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,13 +75,13 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden w-14"
-                    src="/static/images/Logo.png"
-                    alt="Workflow"
+                    src={logo}
+                    alt="SaveLifeFoundation"
                   />
                   <img
                     className="hidden lg:block w-14"
-                    src="/static/images/Logo.png"
-                    alt="Workflow"
+                    src={logo}
+                    alt="SaveLifeFoundation"
                   />
                 </div>
                 <div className="hidden sm:block sm:ml-6 sm:pl-10 mt-4">
@@ -99,6 +107,9 @@ export default function Navbar() {
                         </p>
                       </Link>
                     ))}
+                    <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'cursor-pointer px-3 py-2 rounded-md text-xs font-medium uppercase'
+                    )}>Cases</p>
                   </div>
                 </div>
               </div>
@@ -172,18 +183,28 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                <Link
+                  to={item.secLink}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={900}
                 >
-                  {item.name}
-                </a>
+                  <p
+                    key={item.name}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'block px-3 py-2 rounded-md text-base font-medium'
+                    )}
+                    aria-current={item.current ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </p>
+                </Link>
               ))}
+              <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
+                'cursor-pointer px-3 py-2 rounded-md text-xs font-medium'
+              )}>Cases</p>
             </div>
           </Disclosure.Panel>
         </>
@@ -191,4 +212,6 @@ export default function Navbar() {
     </Disclosure>
   )
 }
+
+export default withRouter(Navbar);
 

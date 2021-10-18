@@ -22,7 +22,7 @@ export default function Aboutus(props) {
             <div class="bg-cover bg-center  h-auto text-white object-fill" style={{ backgroundImage: `url(${aboutus})` }}>
                 <div class="md:w-full text-right">
                     <section class="text-gray-600 body-font">
-                        <div class="bg-purple-600 bg-opacity-40 mx-auto flex  md:flex-row  flex-col items-center">
+                        <div class="bg-purple-600 bg-opacity-40 py-10 sm:py-0 mx-auto flex  md:flex-row  flex-col items-center">
                             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                                 <img class="w-full object-fit object-center rounded" alt="hero" src={aboutMain} />
                             </div>
