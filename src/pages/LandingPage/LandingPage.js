@@ -1,7 +1,7 @@
 import React from "react";
 import HomeBanner from '../../assets/images/homebanner.jpg';
 import { Text } from '../../components';
-import { LandingBanner, WorkWithSaveLife, BenefitsOfJoining, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
+import { LandingBanner, WorkWithSaveLife, Cases, BankDetails, BenefitsOfJoining, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const LandingPage = () => {
@@ -60,6 +60,12 @@ const LandingPage = () => {
         </section> */}
         <section id='section3'>
           <WhoWeAre />
+        </section>
+        <section>
+          <BankDetails />
+        </section>
+        <section>
+          <Cases />
         </section>
         <section id='section4'>
           <StoryAboutWeDo />

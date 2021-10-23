@@ -25,11 +25,11 @@ const Navbar = (props) => {
   const [goingUp, setGoingUp] = useState(false);
   const [changeNavColor, setChangeNavColor] = useState(false);
 
-  const handleRouteChange = () => {
-    console.log('Cases', props);
-    props.history.push('/cases');
-    // window.location = '/cases';
-  }
+  // const handleRouteChange = () => {
+  //   console.log('Cases', props);
+  //   props.history.push('/cases');
+  //   // window.location = '/cases';
+  // }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,9 +107,9 @@ const Navbar = (props) => {
                         </p>
                       </Link>
                     ))}
-                    <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
+                    {/* <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
                       'cursor-pointer px-3 py-2 rounded-md text-xs font-medium uppercase'
-                    )}>Cases</p>
+                    )}>Cases</p> */}
                   </div>
                 </div>
               </div>
@@ -202,9 +202,9 @@ const Navbar = (props) => {
                   </p>
                 </Link>
               ))}
-              <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
+              {/* <p onClick={() => handleRouteChange()} className={classNames('cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white',
                 'cursor-pointer px-3 py-2 rounded-md text-xs font-medium'
-              )}>Cases</p>
+              )}>Cases</p> */}
             </div>
           </Disclosure.Panel>
         </>

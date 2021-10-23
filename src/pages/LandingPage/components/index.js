@@ -11,6 +11,10 @@ export { default as AboutUs } from "./AboutUs";
 export { default as WhoWeAre } from "./WhoWeAre";
 export { default as WorkWithSaveLife } from "./WorkWithSaveLife";
 export { default as BenefitsOfJoining } from "./BenefitsOfJoining";
+export { default as Cases } from "./Cases";
+export { default as BankDetails } from "./BankDetails";
+
+
 
 
 
