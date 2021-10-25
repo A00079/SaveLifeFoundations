@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Text } from '../../../../components';
-import mission from '../../../../assets/images/poorfive.jpg';
-import vission from '../../../../assets/images/poorone.jpg';
-import goal from '../../../../assets/images/poortwo.jpg';
+import mission from '../../../../assets/images/poorfive.jpeg';
+import vission from '../../../../assets/images/foodhelp.jpeg';
+import goal from '../../../../assets/images/work.jpeg';
 
 export default function Missionvissiongoal(props) {
 
@@ -28,7 +28,7 @@ export default function Missionvissiongoal(props) {
                     {
                         screenData.map((el, index) => {
                             return (
-                                <div class="w-full  bg-cover bg-center  h-auto text-white  object-fill" style={{ backgroundImage: `url(${index == 0 ? mission : index == 1 ? vission : goal})` }}>
+                                <div class="w-full  bg-cover bg-center  h-96 text-white  object-fill" style={{ backgroundImage: `url(${index == 0 ? mission : index == 1 ? vission : goal})` }}>
                                     <div className='bg-yellow-900 bg-opacity-60 w-full h-full py-10 px-10'>
                                         <div class="md:w-full h-full">
                                             {/* <p class="font-bold text-sm uppercase">Services</p> */}

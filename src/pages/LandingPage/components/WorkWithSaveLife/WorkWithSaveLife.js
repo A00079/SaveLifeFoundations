@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from '../../../../components';
-import work from '../../../../assets/images/work.jpg';
+import work from '../../../../assets/images/work.jpeg';
 
 export default function Workwithsavelife(props) {
 
@@ -35,7 +35,7 @@ export default function Workwithsavelife(props) {
                         />
                     </div>
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" alt="hero" src="/static/images/work.jpg" />
+                        <img class="object-cover object-center rounded" alt="hero" src={work} />
                     </div>
                 </div>
             </section>

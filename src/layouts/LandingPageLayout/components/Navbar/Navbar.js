@@ -74,17 +74,17 @@ const Navbar = (props) => {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden w-14"
+                    className="block lg:hidden w-20 h-20 pt-5"
                     src={logo}
                     alt="SaveLifeFoundation"
                   />
                   <img
-                    className="hidden lg:block w-14"
+                    className="hidden lg:block w-20 h-20 pt-5"
                     src={logo}
                     alt="SaveLifeFoundation"
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6 sm:pl-10 mt-4">
+                <div className="hidden sm:block sm:ml-6 sm:pl-10 mt-8">
                   <div className="flex space-x-3">
                     {navigation.map((item) => (
                       <Link
@@ -181,7 +181,7 @@ const Navbar = (props) => {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="bg-white px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link
                   to={item.secLink}
@@ -193,7 +193,7 @@ const Navbar = (props) => {
                   <p
                     key={item.name}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-700 hover:text-white',
                       'block px-3 py-2 rounded-md text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}

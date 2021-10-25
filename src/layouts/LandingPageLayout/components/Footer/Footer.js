@@ -29,7 +29,30 @@ const Footer = () => {
             </a>
             <p className="mt-2 text-sm text-gray-500">A Change May Help Many Lives</p>
           </div>
-          {/* <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">Phone No.</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-200 text-xs hover:text-gray-600">9867972450</a>
+                </li>
+                <li>
+                  <a className="text-gray-200 text-xs hover:text-gray-600">7715972439</a>
+                </li>
+                <li>
+                  <a className="text-gray-200 text-xs hover:text-gray-600">9892302407</a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">Email ID</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-200 hover:text-gray-600">info@savelifefoundation.org.in</a>
+                </li>
+              </nav>
+            </div>
+            {/*
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav className="list-none mb-10">
@@ -51,30 +74,8 @@ const Footer = () => {
                   <a className="text-gray-600 hover:text-gray-800">Second Link</a>
                 </li>
               </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-              </nav>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
         </div>
 
         <div className="border-t border-gray-200">

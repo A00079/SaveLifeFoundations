@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text } from '../../../../components';
-import poorMap from '../../../../assets/images/poormap.png';
+import joiining from '../../../../assets/images/joining.jpeg';
 
 export default function Benefitsofjoining(props) {
     const [benefitData, setBenefitData] = useState([
@@ -51,7 +51,7 @@ export default function Benefitsofjoining(props) {
                         />
                     </div>
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" alt="hero" src="/static/images/joining.jpg" />
+                        <img class="object-cover object-center rounded" alt="hero" src={joiining} />
                     </div>
                 </div>
                 <section class="text-gray-600 body-font">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../../../../components';
-import whowe1 from '../../../../assets/images/poorfive.jpg';
-import whowe2 from '../../../../assets/images/poortwo.jpg';
+import whowe1 from '../../../../assets/images/poorfive.jpeg';
+import whowe2 from '../../../../assets/images/poortwo.jpeg';
 
 export default function Whoweare(props) {
 
@@ -20,14 +20,14 @@ export default function Whoweare(props) {
                         />
                     </div>
                     <div class="bg-white p-5 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" alt="hero" src={whowe1} />
+                        <img class="w-full h-96 rounded" alt="hero" src={whowe1} />
                     </div>
                 </div>
             </section>
             <section class="text-gray-600 body-font mt-4">
                 <div class="bg-gray-100 mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
                     <div class="bg-white p-5 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                        <img class="object-cover object-center rounded" alt="hero" src={whowe2} />
+                        <img class="w-full h-96 rounded" alt="hero" src={whowe2} />
                     </div>
                     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                         <Text

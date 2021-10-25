@@ -10,7 +10,7 @@ const LandingPage = () => {
       <div className='space-y-12 sm:space-y-20'>
         <section>
           <div className="w-full bg-cover bg-center" style={{ height: '40rem', backgroundImage: `url(${HomeBanner})` }}>
-            <div className="flex items-center justify-start h-full w-full bg-gray-900 bg-opacity-50 sm:px-24">
+            <div className="flex items-center justify-start h-full w-full sm:px-24">
               <div className="text-center sm:text-left">
                 <div className='space-y-1'>
                   <div className='bg-white rounded-xs px-2 py-1 w-32 mx-auto sm:mx-0'>

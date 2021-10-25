@@ -17,7 +17,9 @@ export default function Bankdetails(props) {
                                     Account name -: Save life foundation <br />
                                     Bank:- HDFC bank <br />
                                     Account no -:  50100473092357 <br />
-                                    IFSC Code - :  HDFC0000665 <br />
+                                    IFSC Code - :  HDFC0000665 <br /><br />
+                                    PAN No - :  ABCTS46760 <br />
+                                    Reg No - :  MAH/590/2021 <br />
                                 </h3>
                                 <div>
                                     <span class="inline-block w-40 h-1 rounded-full bg-green-500"></span>
