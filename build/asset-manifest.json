@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.5151fb16.chunk.css",
-    "main.js": "/static/js/main.fd366b57.chunk.js",
-    "main.js.map": "/static/js/main.fd366b57.chunk.js.map",
+    "main.css": "/static/css/main.cb410a16.chunk.css",
+    "main.js": "/static/js/main.12463d5b.chunk.js",
+    "main.js.map": "/static/js/main.12463d5b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6f0ac078.js",
     "runtime-main.js.map": "/static/js/runtime-main.6f0ac078.js.map",
     "static/js/2.b425ac0c.chunk.js": "/static/js/2.b425ac0c.chunk.js",
@@ -10,24 +10,27 @@
     "static/js/3.ff0faefe.chunk.js": "/static/js/3.ff0faefe.chunk.js",
     "static/js/3.ff0faefe.chunk.js.map": "/static/js/3.ff0faefe.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5151fb16.chunk.css.map": "/static/css/main.5151fb16.chunk.css.map",
+    "static/css/main.cb410a16.chunk.css.map": "/static/css/main.cb410a16.chunk.css.map",
     "static/js/2.b425ac0c.chunk.js.LICENSE.txt": "/static/js/2.b425ac0c.chunk.js.LICENSE.txt",
     "static/media/bank.44878823.svg": "/static/media/bank.44878823.svg",
     "static/media/case1.4c18d84d.jpeg": "/static/media/case1.4c18d84d.jpeg",
+    "static/media/foodhelp.1694878f.jpeg": "/static/media/foodhelp.1694878f.jpeg",
     "static/media/homebanner.6f0ef2cc.jpg": "/static/media/homebanner.6f0ef2cc.jpg",
+    "static/media/joining.64a083e0.jpeg": "/static/media/joining.64a083e0.jpeg",
     "static/media/logo.2fa8b14a.png": "/static/media/logo.2fa8b14a.png",
+    "static/media/poorfive.3f0bd300.jpeg": "/static/media/poorfive.3f0bd300.jpeg",
     "static/media/poorfive.a00b5e39.jpg": "/static/media/poorfive.a00b5e39.jpg",
     "static/media/poorfour.07ecbd63.jpg": "/static/media/poorfour.07ecbd63.jpg",
-    "static/media/poormap.5a3630e8.png": "/static/media/poormap.5a3630e8.png",
     "static/media/poorone.fe503c0c.jpg": "/static/media/poorone.fe503c0c.jpg",
     "static/media/poorthree.e18b3ed9.jpg": "/static/media/poorthree.e18b3ed9.jpg",
+    "static/media/poortwo.445a1096.jpeg": "/static/media/poortwo.445a1096.jpeg",
     "static/media/poortwo.98599ec6.jpg": "/static/media/poortwo.98599ec6.jpg",
-    "static/media/work.74f8ad5e.jpg": "/static/media/work.74f8ad5e.jpg"
+    "static/media/work.3741f0e7.jpeg": "/static/media/work.3741f0e7.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.6f0ac078.js",
     "static/js/2.b425ac0c.chunk.js",
-    "static/css/main.5151fb16.chunk.css",
-    "static/js/main.fd366b57.chunk.js"
+    "static/css/main.cb410a16.chunk.css",
+    "static/js/main.12463d5b.chunk.js"
   ]
 }
