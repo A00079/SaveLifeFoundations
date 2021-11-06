@@ -13,6 +13,8 @@ export { default as WorkWithSaveLife } from "./WorkWithSaveLife";
 export { default as BenefitsOfJoining } from "./BenefitsOfJoining";
 export { default as Cases } from "./Cases";
 export { default as BankDetails } from "./BankDetails";
+export { default as HomeSlides } from "./HomeSlides";
+
 
 
 
