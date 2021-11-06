@@ -119,7 +119,7 @@ const Navbar = (props) => {
                   src={india}
                   alt=""
                 />
-                <button className="hidden sm:block inline-flex text-white font-medium bg-green-500 border-0 py-1 px-2 focus:outline-none hover:bg-indigo-600 rounded-sm text-xs">Donate Now</button>
+                <a href="https://pmny.in/LIplFS6Lo0ki" className="hidden sm:block inline-flex text-white font-medium bg-green-500 border-0 py-1 px-2 focus:outline-none hover:bg-indigo-600 rounded-sm text-xs">Donate Now</a>
 
                 {/* Profile dropdown */}
                 {/* <Menu as="div" className="ml-3 relative">

@@ -39,8 +39,8 @@ const LandingPage = () => {
                 />
                 <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
                 <div className="flex justify-center sm:justify-start mt-6">
-                  <button className="inline-flex text-white font-medium bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">Donate Now</button>
-                  <button className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</button>
+                  <a href="https://pmny.in/LIplFS6Lo0ki" className="inline-flex text-white font-medium bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">Donate Now</a>
+                  <a href="https://pmny.in/LIplFS6Lo0ki" className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</a>
                 </div>
               </div>
             </div>
@@ -55,9 +55,6 @@ const LandingPage = () => {
         <section id='section2'>
           <AboutUs />
         </section>
-        <section>
-          <HomeSlides />
-        </section>
         {/* <section>
           <OurActivity />
         </section> */}
@@ -69,6 +66,9 @@ const LandingPage = () => {
         </section>
         <section>
           <Cases />
+        </section>
+        <section>
+          <HomeSlides />
         </section>
         <section id='section4'>
           <StoryAboutWeDo />

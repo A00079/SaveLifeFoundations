@@ -28,7 +28,7 @@ const LandingBanner = () => {
             </div>
             <div className="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
                 <div>
-                    <a title="Join the fight!" target="_blank" className="block w-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+                    <a title="Join the fight!" href="https://pmny.in/LIplFS6Lo0ki" target="_blank" className="block w-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
                         {/* <img className="object-cover object-center w-full h-full rounded-full" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tonyricher&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /> */}
                         <button className='text-sm bg-green-500 py-2 px-4 text-white rounded-md'>
                             <div className='flex flex-row justify-between items-center space-x-2'>
