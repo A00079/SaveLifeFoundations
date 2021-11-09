@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBanner from '../../assets/images/homebanner.jpg';
+import HomeBanner from '../../assets/images/homebanner.webp';
 import { Text } from '../../components';
 import { LandingBanner, HomeSlides, WorkWithSaveLife, Cases, BankDetails, BenefitsOfJoining, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 import { Link, animateScroll as scroll } from "react-scroll";
