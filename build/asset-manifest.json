@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c796162c.chunk.css",
-    "main.js": "/static/js/main.2cec8d37.chunk.js",
-    "main.js.map": "/static/js/main.2cec8d37.chunk.js.map",
+    "main.js": "/static/js/main.ebac4c93.chunk.js",
+    "main.js.map": "/static/js/main.ebac4c93.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f298094.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f298094.js.map",
     "static/css/2.ce4ae040.chunk.css": "/static/css/2.ce4ae040.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/bank.44878823.svg": "/static/media/bank.44878823.svg",
     "static/media/case1.4c18d84d.jpeg": "/static/media/case1.4c18d84d.jpeg",
     "static/media/foodhelp.1694878f.jpeg": "/static/media/foodhelp.1694878f.jpeg",
-    "static/media/homebanner.6f0ef2cc.jpg": "/static/media/homebanner.6f0ef2cc.jpg",
+    "static/media/homebanner.13c71811.webp": "/static/media/homebanner.13c71811.webp",
     "static/media/joining.64a083e0.jpeg": "/static/media/joining.64a083e0.jpeg",
     "static/media/logo.2fa8b14a.png": "/static/media/logo.2fa8b14a.png",
     "static/media/poorfive.3f0bd300.jpeg": "/static/media/poorfive.3f0bd300.jpeg",
@@ -39,6 +39,6 @@
     "static/css/2.ce4ae040.chunk.css",
     "static/js/2.e1667969.chunk.js",
     "static/css/main.c796162c.chunk.css",
-    "static/js/main.2cec8d37.chunk.js"
+    "static/js/main.ebac4c93.chunk.js"
   ]
 }
