@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HomeBanner from '../../assets/images/homebanner.webp';
+import MobileHomeBanner from '../../assets/images/mobile_home_banner.png';
 import { Text } from '../../components';
 import { LandingBanner, HomeSlides, WorkWithSaveLife, Cases, BankDetails, BenefitsOfJoining, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const LandingPage = () => {
+  const [isDesktop, setIsDesktop] = useState();
+
+  useEffect(() =>{
+    if(window.innerWidth > 468){
+      setIsDesktop(true);
+    }else{
+      setIsDesktop(false);
+    }
+  },[]);
+
   return (
     <React.Fragment>
       <div className='space-y-12 sm:space-y-20'>
         <section>
-          <div className="w-full bg-cover bg-center" style={{ height: '40rem', backgroundImage: `url(${HomeBanner})` }}>
+          <div className="w-full bg-cover bg-center h-screen" style={{  backgroundImage: `url(${isDesktop?HomeBanner: MobileHomeBanner})` }}>
             <div className="flex items-center justify-start h-full w-full sm:px-24">
               <div className="text-center sm:text-left">
                 <div className='space-y-1'>

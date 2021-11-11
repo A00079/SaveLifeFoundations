@@ -55,7 +55,7 @@ const Navbar = (props) => {
   }, [goingUp]);
 
   return (
-    <Disclosure as="nav" className={changeNavColor ? 'bg-gray-900 fixed w-full' : 'bg-transparent fixed w-full'} style={{ zIndex: '9999' }}>
+    <Disclosure as="nav" className={changeNavColor ? 'py-5 bg-gray-900 fixed w-full' : 'bg-transparent fixed w-full'} style={{ zIndex: '9999' }}>
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -74,12 +74,12 @@ const Navbar = (props) => {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden w-20 h-20 pt-5"
+                    className="block lg:hidden w-20 h-24 pt-7"
                     src={logo}
                     alt="SaveLifeFoundation"
                   />
                   <img
-                    className="hidden lg:block w-20 h-20 pt-5"
+                    className="hidden lg:block object-fit w-20 pt-5"
                     src={logo}
                     alt="SaveLifeFoundation"
                   />
