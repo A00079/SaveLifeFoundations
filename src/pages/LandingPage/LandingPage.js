@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import HomeBanner from '../../assets/images/homebanner.webp';
-import MobileHomeBanner from '../../assets/images/mobile_home_banner.png';
+import HomeBanner from '../../assets/images/homebanner.jpeg';
+import MobileHomeBanner from '../../assets/images/mobile_home_banner.jpeg';
 import { Text } from '../../components';
 import { LandingBanner, HomeSlides, WorkWithSaveLife, Cases, BankDetails, BenefitsOfJoining, OurActivity, WhoWeAre, AboutUs, MissionVissionGoal, StoryAboutWeDo, GetToKnowUs, ActivityInFrame, SomeFacts, Volunteers, LatestNews } from '../LandingPage/components';
 import { Link, animateScroll as scroll } from "react-scroll";
