@@ -1,5 +1,7 @@
 import React from 'react'
 import bank from '../../../../assets/images/bank.svg';
+import QR1 from '../../../../assets/images/orcode1.jpeg';
+import QR2 from '../../../../assets/images/orcode2.jpeg';
 
 export default function Bankdetails(props) {
 
@@ -26,6 +28,12 @@ export default function Bankdetails(props) {
                                     <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"></span>
                                     <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
                                 </div>
+                            </div>
+                            <div class="px-3 md:w-1/3">
+                                <img class="w-full object-cover object-center rounded" alt="hero" src={QR2} />
+                            </div>
+                            <div class="px-3 md:w-1/3">
+                                <img class="w-full object-cover object-center rounded" alt="hero" src={QR1} />
                             </div>
                             <div class="px-3 md:w-1/3">
                                 <img class="w-full object-cover object-center rounded" alt="hero" src={bank} />

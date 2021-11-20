@@ -20,7 +20,8 @@ export default function Cases(props) {
         <React.Fragment>
             <div className=''>
                 <div class="text-center">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">Cases</h1>
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-1">Save Life Foundation</h1>
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-2">Cases</h1>
                     <Text
                         text={'We are presently pursuing help for the critical case of 6month old baby boy  SUFIYAN SHAH.'}
                         className='mb-2 text-sm text-gray-500'

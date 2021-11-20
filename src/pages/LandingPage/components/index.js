@@ -14,6 +14,8 @@ export { default as BenefitsOfJoining } from "./BenefitsOfJoining";
 export { default as Cases } from "./Cases";
 export { default as BankDetails } from "./BankDetails";
 export { default as HomeSlides } from "./HomeSlides";
+export { default as Posters } from "./Posters";
+
 
 
 
