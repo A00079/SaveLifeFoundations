@@ -41,7 +41,7 @@ const StoryAboutWeDo = () => {
     }
     return (
         <React.Fragment>
-            <section class="text-gray-600 body-font">
+            <section class="text-gray-600 body-font py-20">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
                         <Text

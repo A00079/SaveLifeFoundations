@@ -13,7 +13,7 @@ export default function Bankdetails(props) {
                 <div class="w-full bg-white border-t border-b border-gray-200 px-5 py-5 md:py-10 text-gray-800 font-light">
                     <div class="w-full max-w-6xl mx-auto pb-5">
                         <div class="-mx-3 md:flex items-center">
-                            <div class="px-3 md:w-2/3 mb-10 md:mb-0">
+                            <div class="px-3 md:w-1/3 mb-10 md:mb-0">
                                 <h1 class="text-3xl md:text-4xl font-bold mb-5 leading-tight">Bank Details.</h1>
                                 <h3 class="text-gray-600 mb-7 text-sm font-bold">
                                     Account name -: Save life foundation <br />
@@ -30,10 +30,10 @@ export default function Bankdetails(props) {
                                 </div>
                             </div>
                             <div class="px-3 md:w-1/3">
-                                <img class="w-full object-cover object-center rounded" alt="hero" src={QR2} />
+                                <img class="w-full h-96 object-fit object-center rounded" alt="hero" src={QR2} />
                             </div>
                             <div class="px-3 md:w-1/3">
-                                <img class="w-full object-cover object-center rounded" alt="hero" src={QR1} />
+                                <img class="w-full h-96 object-fit object-center rounded" alt="hero" src={QR1} />
                             </div>
                             <div class="px-3 md:w-1/3">
                                 <img class="w-full object-cover object-center rounded" alt="hero" src={bank} />

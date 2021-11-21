@@ -8,7 +8,12 @@ import axios from "axios";
 import { withRouter } from "react-router";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-
+import HomeBanner2 from '../../assets/images/education.webp';
+import HomeBanner3 from '../../assets/images/food.jpg';
+import HomeBanner4 from '../../assets/images/food2.jpg';
+import HomeBanner5 from '../../assets/images/cancer.jpg';
+import brandlogo from '../../assets/images/brand-logo.jpeg';
+import { Footer } from "../../layouts/LandingPageLayout/components";
 const LandingPage = (props) => {
   const [isDesktop, setIsDesktop] = useState();
 
@@ -94,24 +99,26 @@ const LandingPage = (props) => {
 
   return (
     <React.Fragment>
-      <div className='space-y-12 sm:space-y-20'>
+      <div className='space-y-5 sm:space-y-0'>
         <div ref={sliderRef} className="keen-slider relative">
           <div className="keen-slider__slide number-slide1">
-            <img class="w-full object-cover object-center" src={HomeBanner} alt="blog" />
+            <img class="w-full object-cover object-center h-screen" src={HomeBanner} alt="blog" />
           </div>
           <div className="keen-slider__slide number-slide2">
-            <img class=" w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog" />
+            <img class=" w-full object-cover object-center h-screen" src={HomeBanner2} alt="blog" />
           </div>
-          <div className="keen-slider__slide number-slide3"><img class=" w-full object-cover object-center" src={HomeBanner} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide4"><img class=" w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner3} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner4} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner5} alt="blog" /></div>
         </div>
         <section className='absolute top-0'>
           <div className="w-full bg-cover bg-center h-screen">
-            <div className="flex items-center justify-start h-full w-full sm:px-24">
+            <div className="flex items-start justify-start h-full w-full py-24 sm:px-24">
               <div className="text-center sm:text-left">
                 <div className='space-y-1'>
-                  <div className='bg-white rounded-xs px-2 py-1 w-full mx-auto sm:mx-0'>
-                    <div className='text-black w-full text-sm font-semibold uppercase md:text-sm'>
+                  <img class="hidden sm:block w-20 sm:w-32 object-fit object-center" src={brandlogo} alt="blog" />
+                  <div className='bg-white rounded-xs px-2 py-1 sm:w-full w-60 mx-auto sm:mx-0'>
+                    <div className='text-black sm:w-full w-60 text-sm font-semibold uppercase md:text-sm'>
                       All Donation to save life foundation are exempted under section 80G of the income tax act 1961
                     </div>
                     {/* <Text
@@ -138,13 +145,19 @@ const LandingPage = (props) => {
                   className='text-white text-lg sm:text-xl mt-2 font-semibold md:text-sm sm:w-96'
                 />
                 <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
-                <div className="flex justify-center sm:justify-start mt-6">
+                <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>Hepl us create a better world for our children </h1>
+                <div className="flex justify-center space-x-3 sm:justify-start mt-6">
                   <a onClick={() => paymentHandler()} className="flex flex-col items-center inline-flex text-white font-medium bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
                     <div>
                       Donate Now
                     </div>
                     <div className='text-xs'>
                       (Indian Tax Benefit Avaliable)
+                    </div>
+                  </a>
+                  <a onClick={() => paymentHandler()} className="flex flex-col items-center inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
+                    <div>
+                      Support Now
                     </div>
                   </a>
                   {/* <a className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</a> */}
@@ -158,39 +171,42 @@ const LandingPage = (props) => {
           <section id='section1'>
             <MissionVissionGoal />
           </section>
-        </section>
-        <section id='section2'>
-          <AboutUs />
-        </section>
-        {/* <section>
+          <section id='section2' className='py-10'>
+            <AboutUs />
+          </section>
+          {/* <section>
           <OurActivity />
         </section> */}
-        <section id='section3'>
-          <WhoWeAre />
-          <Posters />
-        </section>
-        {/* <section id='section7'>
+          <section>
+            <Cases />
+          </section>
+          <section id='section3'>
+            <WhoWeAre />
+            <Posters />
+          </section>
+          {/* <section id='section7'>
           <Posters />
         </section> */}
-        <section>
-          <BankDetails />
-        </section>
-        <section>
-          <Cases />
-        </section>
-        <section>
-          <HomeSlides />
-        </section>
-        <section id='section4'>
-          <StoryAboutWeDo />
-        </section>
-        <section id='section5'>
-          <WorkWithSaveLife />
-        </section>
-        <section id='section6'>
-          <BenefitsOfJoining />
-        </section>
-        {/* <section>
+
+          <section>
+            <BankDetails />
+          </section>
+          <section>
+            <HomeSlides />
+          </section>
+          <section id='section4'>
+            <StoryAboutWeDo />
+          </section>
+          <section id='section5'>
+            <WorkWithSaveLife />
+          </section>
+          <section id='section6'>
+            <BenefitsOfJoining />
+          </section>
+          <section id='section7'>
+            <Footer />
+          </section>
+          {/* <section>
           <GetToKnowUs />
         </section>
         <section>
@@ -205,6 +221,8 @@ const LandingPage = (props) => {
         <section>
           <LatestNews />
         </section> */}
+        </section>
+
       </div>
     </React.Fragment>
   );

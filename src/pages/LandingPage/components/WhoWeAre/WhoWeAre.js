@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../../../../components';
-import whowe1 from '../../../../assets/images/poorfive.jpeg';
-import whowe2 from '../../../../assets/images/poortwo.jpeg';
+import whowe1 from '../../../../assets/images/food.jpg';
+import whowe2 from '../../../../assets/images/food2.jpg';
 
 export default function Whoweare(props) {
 
