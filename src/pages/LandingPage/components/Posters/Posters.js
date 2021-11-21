@@ -63,7 +63,10 @@ function Posters() {
                                                 <p class="leading-relaxed h-96 mb-3 text-center py-2 text-gray-300">{el.content}</p>
                                             </div>
                                             <div class="bg-yellow-500">
-                                                <button className='text-center text-red-600 font-bold w-full mx-auto bg-yellow-500 p-2 text-sm'>DONATE NOW</button>
+                                                <button className='text-center text-red-600 font-bold w-full mx-auto bg-yellow-500 p-2 text-sm'>
+                                                    <a href="https://pmny.in/LIplFS6Lo0ki" >
+                                                        DONATE NOW
+                                                    </a></button>
                                             </div>
                                         </div>
                                     </div>

@@ -12,7 +12,14 @@ import HomeBanner2 from '../../assets/images/education.webp';
 import HomeBanner3 from '../../assets/images/food.jpg';
 import HomeBanner4 from '../../assets/images/food2.jpg';
 import HomeBanner5 from '../../assets/images/cancer.jpg';
+import HomeBanner6 from '../../assets/images/cancer.jfif';
+import HomeBanner7 from '../../assets/images/education.jfif';
+import HomeBanner8 from '../../assets/images/education1.jpeg';
+import HomeBanner9 from '../../assets/images/sports1.jpg';
+import HomeBanner10 from '../../assets/images/sports.jpg';
 import brandlogo from '../../assets/images/brand-logo.jpeg';
+
+
 import { Footer } from "../../layouts/LandingPageLayout/components";
 const LandingPage = (props) => {
   const [isDesktop, setIsDesktop] = useState();
@@ -110,6 +117,11 @@ const LandingPage = (props) => {
           <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner3} alt="blog" /></div>
           <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner4} alt="blog" /></div>
           <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner5} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner6} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner7} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner8} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner9} alt="blog" /></div>
+          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner10} alt="blog" /></div>
         </div>
         <section className='absolute top-0'>
           <div className="w-full bg-cover bg-center h-screen">
@@ -147,7 +159,7 @@ const LandingPage = (props) => {
                 <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
                 <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>Hepl us create a better world for our children </h1>
                 <div className="flex justify-center space-x-3 sm:justify-start mt-6">
-                  <a onClick={() => paymentHandler()} className="flex flex-col items-center inline-flex text-white font-medium bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
+                  <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
                     <div>
                       Donate Now
                     </div>
@@ -155,7 +167,7 @@ const LandingPage = (props) => {
                       (Indian Tax Benefit Avaliable)
                     </div>
                   </a>
-                  <a onClick={() => paymentHandler()} className="flex flex-col items-center inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
+                  <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
                     <div>
                       Support Now
                     </div>
