@@ -189,8 +189,11 @@ const LandingPage = (props) => {
           {/* <section>
           <OurActivity />
         </section> */}
-          <section>
+          {/* <section>
             <Cases />
+          </section> */}
+          <section>
+            <HomeSlides />
           </section>
           <section id='section3'>
             <WhoWeAre />
@@ -203,9 +206,7 @@ const LandingPage = (props) => {
           <section>
             <BankDetails />
           </section>
-          <section>
-            <HomeSlides />
-          </section>
+          
           <section id='section4'>
             <StoryAboutWeDo />
           </section>
