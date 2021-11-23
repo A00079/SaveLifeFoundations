@@ -52,11 +52,11 @@ const HomeSlider = () => {
                                             <div className="flex flex-row justify-between pb-3 border-b-2 border-gray-300">
                                                 <div className="flex flex-col px-4 border-r-2 border-gray-300">
                                                     <p className="text-sm font-bold text-gray-600">Current</p>
-                                                    <p className="text-green-500 font-bold">&#8377;{el.donationRequirement}</p>
+                                                    <p className="text-green-500 font-bold">&#8377;{el.current}</p>
                                                 </div>
                                                 <div className="flex flex-col px-4 border-r-2 border-gray-300">
                                                     <p className="text-sm font-bold text-gray-600">Target</p>
-                                                    <p className="text-green-500 font-bold">&#8377;{el.target}</p>
+                                                    <p className="text-green-500 font-bold">&#8377;{el.donationRequirement}</p>
                                                 </div>
                                                 <div className="flex flex-col">
                                                     <p className="text-sm font-bold text-gray-600">Rate</p>
