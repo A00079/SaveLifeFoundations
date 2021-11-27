@@ -33,7 +33,7 @@ function Posters() {
         <div>
             <div class="text-center py-10">
                 <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-1">Save Life Foundation</h1>
-                <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-2">Cancer Cases</h1>
+                {/* <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-2">Cancer Cases</h1> */}
                 <h4
                     text={'We are presently pursuing help for the critical case of 6month old baby boy  SUFIYAN SHAH.'}
                     className='mb-2 text-sm text-gray-500'

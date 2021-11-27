@@ -107,119 +107,124 @@ const LandingPage = (props) => {
   return (
     <React.Fragment>
       <div className='space-y-5 sm:space-y-0'>
-        <div ref={sliderRef} className="keen-slider relative">
-          <div className="keen-slider__slide number-slide1">
-            <img class="w-full object-cover object-center h-screen" src={HomeBanner} alt="blog" />
-          </div>
-          <div className="keen-slider__slide number-slide2">
-            <img class=" w-full object-cover object-center h-screen" src={HomeBanner2} alt="blog" />
-          </div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner3} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner4} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner5} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner6} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner7} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner8} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner9} alt="blog" /></div>
-          <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner10} alt="blog" /></div>
-        </div>
-        <section className='absolute top-0'>
-          <div className="w-full bg-cover bg-center h-screen">
-            <div className="flex items-start justify-start h-full w-full py-24 sm:px-24">
-              <div className="text-center sm:text-left">
-                <div className='space-y-1'>
-                  <img class="hidden sm:block w-20 sm:w-32 object-fit object-center" src={brandlogo} alt="blog" />
-                  <div className='bg-white rounded-xs px-2 py-1 sm:w-full w-60 mx-auto sm:mx-0'>
-                    <div className='text-black sm:w-full w-60 text-sm font-semibold uppercase md:text-sm'>
-                      All Donation to save life foundation are exempted under section 80G of the income tax act 1961
-                    </div>
-                    {/* <Text
+
+        <section>
+          <div>
+            <div className='relative'>
+              <div ref={sliderRef} className="keen-slider z-60">
+                <div className="keen-slider__slide number-slide1">
+                  <img class="w-full object-cover object-center h-screen" src={HomeBanner} alt="blog" />
+                </div>
+                <div className="keen-slider__slide number-slide2">
+                  <img class=" w-full object-cover object-center h-screen" src={HomeBanner2} alt="blog" />
+                </div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner3} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner4} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide4 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner5} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner6} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner7} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner8} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner9} alt="blog" /></div>
+                <div className="keen-slider__slide number-slide3 "><img class=" w-full h-screen object-cover object-center" src={HomeBanner10} alt="blog" /></div>
+              </div>
+            </div>
+            <div className="w-full absolute top-0 bg-cover bg-center h-screen">
+              <div className="flex items-start justify-start h-full w-full py-24 sm:px-24">
+                <div className="text-center sm:text-left">
+                  <div className='space-y-1'>
+                    <img class="hidden sm:block w-20 sm:w-32 object-fit object-center" src={brandlogo} alt="blog" />
+                    <div className='bg-white rounded-xs px-2 py-1 sm:w-full w-60 mx-auto sm:mx-0'>
+                      <div className='text-black sm:w-full w-60 text-sm font-semibold uppercase md:text-sm'>
+                        All Donation to save life foundation are exempted under section 80G of the income tax act 1961
+                      </div>
+                      {/* <Text
                       text={'Stand With Us'}
                       className='text-black text-sm font-semibold uppercase md:text-sm'
                     /> */}
+                    </div>
+                    <Text
+                      text={'No One Has Ever'}
+                      className='text-white text-2xl font-semibold uppercase md:text-5xl'
+                    />
+                    <Text
+                      text={'Become Poor'}
+                      className='text-white text-2xl font-semibold uppercase md:text-5xl'
+                    />
+                    <Text
+                      text={'By Giving.'}
+                      className='text-white text-2xl font-semibold uppercase md:text-5xl'
+                    />
+                    <div className='w-44 h-1 bg-green-400 mx-auto sm:mx-0'></div>
                   </div>
                   <Text
-                    text={'No One Has Ever'}
-                    className='text-white text-2xl font-semibold uppercase md:text-5xl'
+                    text={'A Change May Help Many Lives.'}
+                    className='text-white text-lg sm:text-xl mt-2 font-semibold md:text-sm sm:w-96'
                   />
-                  <Text
-                    text={'Become Poor'}
-                    className='text-white text-2xl font-semibold uppercase md:text-5xl'
-                  />
-                  <Text
-                    text={'By Giving.'}
-                    className='text-white text-2xl font-semibold uppercase md:text-5xl'
-                  />
-                  <div className='w-44 h-1 bg-green-400 mx-auto sm:mx-0'></div>
-                </div>
-                <Text
-                  text={'A Change May Help Many Lives.'}
-                  className='text-white text-lg sm:text-xl mt-2 font-semibold md:text-sm sm:w-96'
-                />
-                <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
-                <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>Hepl us create a better world for our children </h1>
-                <div className="flex justify-center space-x-3 sm:justify-start mt-6">
-                  <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
-                    <div>
-                      Donate Now
-                    </div>
-                    <div className='text-xs'>
-                      (Indian Tax Benefit Avaliable)
-                    </div>
-                  </a>
-                  <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
-                    <div>
-                      Support Now
-                    </div>
-                  </a>
-                  {/* <a className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</a> */}
+                  <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>The life of a man consists of seeing visions and dreaming dreams, but in active charity and in willing service </h1>
+                  <h1 className="text-white text-xs mt-2 font-semibold md:text-xs sm:w-96" style={{ fontFamily: 'Raleway' }}>Hepl us create a better world for our children </h1>
+                  <div className="flex justify-center space-x-3 sm:justify-start mt-6">
+                    <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
+                      <div>
+                        Donate Now
+                      </div>
+                      <div className='text-xs'>
+                        (Indian Tax Benefit Avaliable)
+                      </div>
+                    </a>
+                    <a href="https://pmny.in/LIplFS6Lo0ki" className="flex flex-col items-center inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-sm sm:text-lg">
+                      <div>
+                        Support Now
+                      </div>
+                    </a>
+                    {/* <a className="ml-4 inline-flex text-white font-medium bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-sm sm:text-lg">Join Us Now</a> */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <section>
-            <LandingBanner />
-          </section>
-          <section id='section1'>
-            <MissionVissionGoal />
-          </section>
-          <section id='section2' className='py-10'>
-            <AboutUs />
-          </section>
-          {/* <section>
+
+        </section>
+        <section>
+          <LandingBanner />
+        </section>
+        <section id='section1'>
+          <MissionVissionGoal />
+        </section>
+        <section id='section2' className='py-10'>
+          <AboutUs />
+        </section>
+        {/* <section>
           <OurActivity />
         </section> */}
-          {/* <section>
+        {/* <section>
             <Cases />
           </section> */}
-          <section>
-            <HomeSlides />
-          </section>
-          <section id='section3'>
-            <WhoWeAre />
-            <Posters />
-          </section>
-          {/* <section id='section7'>
+        <section>
+          <HomeSlides />
+        </section>
+        <section id='section3'>
+          <WhoWeAre />
+          <Posters />
+        </section>
+        {/* <section id='section7'>
           <Posters />
         </section> */}
-
-          <section>
-            <BankDetails />
-          </section>
-          
-          <section id='section4'>
-            <StoryAboutWeDo />
-          </section>
-          <section id='section5'>
-            <WorkWithSaveLife />
-          </section>
-          <section id='section6'>
-            <BenefitsOfJoining />
-          </section>
-          <section id='section7'>
-            <Footer />
-          </section>
-          {/* <section>
+        <section>
+          <BankDetails />
+        </section>
+        <section id='section4'>
+          <StoryAboutWeDo />
+        </section>
+        <section id='section5'>
+          <WorkWithSaveLife />
+        </section>
+        <section id='section6'>
+          <BenefitsOfJoining />
+        </section>
+        <section id='section7'>
+          <Footer />
+        </section>
+        {/* <section>
           <GetToKnowUs />
         </section>
         <section>
@@ -234,7 +239,6 @@ const LandingPage = (props) => {
         <section>
           <LatestNews />
         </section> */}
-        </section>
 
       </div>
     </React.Fragment>

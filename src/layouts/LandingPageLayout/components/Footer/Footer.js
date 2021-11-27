@@ -1,9 +1,13 @@
 import React from "react";
 import logo from '../../../../assets/images/logo.png';
+import { withRouter } from "react-router";
 
-const Footer = () => {
+const Footer = (props) => {
   const currentYear = new Date().getFullYear();
 
+  const handleGoto = (url) =>{
+    props.history.push('/'+url);
+  }
   return (
     <React.Fragment>
       <footer className="bg-gray-900 text-gray-600 body-font">
@@ -49,6 +53,14 @@ const Footer = () => {
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-200 hover:text-gray-600">info@savelifefoundation.org.in</a>
+                </li>
+              </nav>
+            </div>
+            <div className="ml-10 lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">Office Address</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-200 hover:text-gray-600">Office Number 11, 1st Floor Asmita Orient CHS, near cafe coffee day, opposite aritel gallery, Mira Road (E) , Thane - 401107.</a>
                 </li>
               </nav>
             </div>
@@ -112,6 +124,16 @@ const Footer = () => {
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
                 </svg>
               </a>
+
+              <a onClick={() =>handleGoto('privacy-policy')} className="cursor-pointer ml-3 text-gray-500">
+                Privacy Policy
+              </a>
+              <a  onClick={() =>handleGoto('terms-conditions')}  className="cursor-pointer ml-3 text-gray-500">
+                Terms And Condition
+              </a>
+              <a  onClick={() =>handleGoto('refund-policy')}  className="cursor-pointer ml-3 text-gray-500">
+                Refund Policy
+              </a>
             </span>
           </div>
         </div>
@@ -128,4 +150,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default withRouter(Footer);
