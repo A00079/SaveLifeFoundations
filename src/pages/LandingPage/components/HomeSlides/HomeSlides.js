@@ -54,7 +54,7 @@ const HomeSlider = () => {
                             return (
                                 <div class="p-4 keen-slider__slide number-slide1">
                                     <div class="h-full flex flex-col w-96 bg-white  shadow-xl rounded-lg items-center  text-center">
-                                        <img alt="team" class="flex-shrink-0  rounded-lg w-full h-56 object-cover object-center mb-4" src={HomeSlide5} />
+                                        <img alt="team" class="flex-shrink-0  rounded-lg w-full h-56 object-cover object-center mb-4" src={el.imageUrl} />
                                         <div class="w-full">
                                             <div className="flex flex-row justify-between pb-3 border-b-2 border-gray-300 px-10">
                                                 <div className="flex flex-col px-4 border-r-2 border-gray-300">
